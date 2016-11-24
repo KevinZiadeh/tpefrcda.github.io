@@ -1,0 +1,55 @@
+<html>
+<head>
+  <title>Peut-on Tout Mesurer</title>
+  <meta charset="utf-8">
+  <meta name="language" content="French">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta author="Kevin Ziadeh" />
+    <link type="text/css" rel="stylesheet" href="../CSS/style.css" />
+    <link type="text/css" rel="stylesheet" href="../CSS/header.css" />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+
+    $(document).ready(function(){
+      setInterval(function(){
+    if($(window).width() <= 600 && $(window).width() > 370){
+      $(".header").addClass('headeract').removeClass('header');
+      $(".heading").addClass('headingact').removeClass('heading');
+    }else if ($(window).width() <= 370){
+      $(".header").addClass('headeract2').removeClass('header');
+      $(".heading").addClass('headingact2').removeClass('heading');
+    }
+    else {
+      $(".header").addClass('header').removeClass('headeract');
+      $(".heading").addClass('heading').removeClass('headingact');
+    }
+    }, 100);
+    });
+
+    </script>
+
+</head>
+<body>
+  <body>
+    <div class="header">
+      <ul class="heading">
+        <a href="../index.html"><li>
+          Accueil
+        </li></a>
+        <a href="emotions.html"><li style="background-color: rgb(200, 0, 0); color: rgb(230, 230, 230);">
+          Les Emotions
+        </li></a>
+        <a href="../Systemes/systemes.html"><li>
+          Les Systemes
+        </li></a>
+        <a href="../Intelligence/intelligence.html"><li>
+          L'Intelligence
+        </li></a>
+        <a href="../img/img.html"><li>
+          Images
+        </li></a>
+      </ul>
+    </div>
+</body>
+</html>

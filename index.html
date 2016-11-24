@@ -1,47 +1,80 @@
+<!DOCTYPE html>
 <html>
 <head>
   <title>Peut-on Tout Mesurer</title>
-    <meta />
-    <link type="text/css" rel="stylesheet" href="style.css" />
-    <link type="text/css" rel="stylesheet" href="header.css" />
+  <meta charset="utf-8">
+  <meta name="language" content="French">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta author="Kevin Ziadeh" />
+    <link type="text/css" rel="stylesheet" href="CSS/style.css" />
+    <link type="text/css" rel="stylesheet" href="CSS/header.css" />
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+
+    $(document).ready(function(){
+      setInterval(function(){
+    if($(window).width() <= 600 && $(window).width() > 370){
+      $(".names").addClass('namesact').removeClass('names');
+      $(".name").addClass('nameact').removeClass('name');
+      $(".header").addClass('headeract').removeClass('header');
+      $(".heading").addClass('headingact').removeClass('heading');
+    }else if ($(window).width() <= 370){
+      $(".names").addClass('namesact2').removeClass('names');
+      $(".name").addClass('nameact2').removeClass('name');
+      $(".header").addClass('headeract2').removeClass('header');
+      $(".heading").addClass('headingact2').removeClass('heading');
+    }
+    else {
+      $(".names").addClass('names').removeClass('namesact');
+      $(".name").addClass('name').removeClass('nameact');
+      $(".header").addClass('header').removeClass('headeract');
+      $(".heading").addClass('heading').removeClass('headingact');
+    }
+    }, 100);
+    });
+
+    </script>
 </head>
+
 <body>
   <body>
     <div class="header">
       <ul class="heading">
-        <a href="accueil.html"><li style="background-color: rgb(200, 0, 0); color: rgb(230, 230, 230);">
+        <a href="index.html"><li style="background-color: rgb(200, 0, 0); color: rgb(230, 230, 230);">
           Accueil
         </li></a>
-        <a href="emotions.html"><li>
+        <a href="Emotions/emotions.html"><li>
           Les Emotions
         </li></a>
-        <a href="systemes.html"><li>
+        <a href="Systemes/systemes.html"><li>
           Les Systemes
         </li></a>
-        <a href="intelligence.html"><li>
+        <a href="Intelligence/intelligence.html"><li>
           L'Intelligence
-        </li></a></ul>
+        </li></a>
+        <a href="img/img.html"><li>
+          Images
+        </li></a>
+      </ul>
     </div>
+
     <div class="us">
       <img src="us.jpg" alt="us" />
-      <p class="names">
-        <ul>
-          <li>
+        <ul class="names">
+          <li class="name">
             Rita-Maria <strong>BOUTROS</strong>
           </li>
-          <li>
+          <li class="name">
             Lea <strong>KHAYRALLAH</strong>
           </li>
-          <li>
+          <li class="name">
             Rita <strong>MIR</strong>
           </li>
-          <li>
+          <li class="name">
             Kevin <strong>ZIADEH</strong>
           </li>
         </ul>
-      </p>
     </div>
     <div class="intro">
       <p  class="introduction">

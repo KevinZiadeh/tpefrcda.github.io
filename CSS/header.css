@@ -1,0 +1,116 @@
+body {
+  background-color: rgb(230, 230, 230);
+  margin: 0px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.header{
+  width: 100%;
+  height: 60px;
+  position: relative;;
+  top: 0px;
+  left: 0px;
+  background-color: rgb(230, 230, 230);
+  border-bottom: 8px solid rgb(200, 0, 0);
+  display: block;
+  margin: 0px;
+  overflow: hidden;
+}
+
+.heading{
+  font-size: 22px;
+  color: rgb(200, 0, 0);
+  display: inline;;
+}
+
+.heading li{
+  margin-right: 3%;
+  display: inline;
+  float: left;
+  list-style-type: none;
+  padding: 17px 30px 17px 30px;
+}
+
+
+.heading li:hover{
+  background-color: rgb(150,150,150);
+  color: rgb(200, 200, 200);
+  transition: 300ms;
+}
+
+
+
+
+.headeract{
+  width: 100%;
+  height: 30px;
+  position: relative;;
+  top: 0px;
+  left: 0px;
+  background-color: rgb(230, 230, 230);
+  border-bottom: 8px solid rgb(200, 0, 0);
+  display: block;
+  margin: 0px;
+  overflow: hidden;
+}
+
+.headingact{
+  font-size: 10px;
+  color: rgb(200, 0, 0);
+  display: inline;;
+}
+
+.headingact li{
+  margin-right: 1%;
+  display: inline;
+  float: left;
+  list-style-type: none;
+  padding: 11px 5px 11px 5px;
+}
+
+.headingact li:hover{
+  background-color: rgb(150,150,150);
+  color: rgb(200, 200, 200);
+  transition: 300ms;
+}
+
+
+
+
+.headeract2{
+  width: 100%;
+  height: 25px;
+  position: relative;;
+  top: 0px;
+  left: 0px;
+  background-color: rgb(230, 230, 230);
+  border-bottom: 8px solid rgb(200, 0, 0);
+  display: block;
+  margin: 0px;
+  overflow: hidden;
+}
+
+.headingact2{
+  font-size: 8px;
+  color: rgb(200, 0, 0);
+  display: inline;;
+}
+
+.headingact2 li{
+  margin-right: 1%;
+  display: inline;
+  float: left;
+  list-style-type: none;
+  padding: 11px 4px 11px 4px;
+}
+
+.headingact2 li:hover{
+  background-color: rgb(150,150,150);
+  color: rgb(200, 200, 200);
+  transition: 300ms;
+}

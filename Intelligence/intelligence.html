@@ -1,0 +1,383 @@
+
+<html>
+<head>
+  <title>Peut-on Tout Mesurer</title>
+  <meta charset="utf-8">
+  <meta name="language" content="French">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta author="Kevin Ziadeh" />
+    <link type="text/css" rel="stylesheet" href="../CSS/style.css" />
+    <link type="text/css" rel="stylesheet" href="../CSS/header.css" />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+
+    $(document).ready(function(){
+      setInterval(function(){
+    if($(window).width() <= 600 && $(window).width() > 370){
+      $(".header").addClass('headeract').removeClass('header');
+      $(".heading").addClass('headingact').removeClass('heading');
+    }else if ($(window).width() <= 370){
+      $(".header").addClass('headeract2').removeClass('header');
+      $(".heading").addClass('headingact2').removeClass('heading');
+    }
+    else {
+      $(".header").addClass('header').removeClass('headeract');
+      $(".heading").addClass('heading').removeClass('headingact');
+    }
+    }, 100);
+    });
+
+    </script>
+
+</head>
+<body>
+  <body>
+    <div class="header">
+      <ul class="heading">
+        <a href="../index.html"><li>
+          Accueil
+        </li></a>
+        <a href="../Emotions/emotions.html"> <li>
+          Les Emotions
+        </li></a>
+        <a href="../Systemes/systemes.html"><li>
+          Les Systemes
+        </li></a>
+        <a href="../Intelligence/intelligence.html"><li  style="background-color: rgb(200, 0, 0); color: rgb(230, 230, 230);">
+          L'Intelligence
+        </li></a>
+        <a href="../img/img.html"><li>
+          Images
+        </li></a>
+      </ul>
+    </div>
+
+    <div class="intel">
+      <p class="intelintro">
+        La connaissance c'est avoir la bonne réponse.
+      <br />
+      L'intelligence c'est avoir la bonne question.
+    </p>
+
+      <p class="quest">
+            C'est quoi l'intelligence?
+        </p>
+        <p class="reponse">
+        <span style="margin-left: 30px;"><strong>L’intelligence</strong></span>
+         présente l’ensemble des capacités mentales d’un individu,
+         les facultés de comprendre, de connaitre les faits ce qui permet à
+         l’Homme de s’adapter avec son environnement et c’est ce qu’il lui
+         distingue des autre espèces.
+      </p>
+
+
+      <div class="inteltypes">
+        <p class="quest">
+            La mesure de l'intelligence est-elle absolue?
+        </p>
+        <p class="reponse">
+        <span style="margin-left: 30px;">Non. Il ne s’agit pas d’une mesure
+        directe <span class="parenthese">comme on peut mesurer la taille d’une
+        personne avec un mètre</span> mais une mesure indirecte
+        <span class="parenthese">comme mesurer la taille d’une personne en
+        se référant a la taille de son ombre sur un sol inégal</span>.
+         <br />
+        <span style="text-decoration: underline; margin-left: 30px;">On a
+          des differents types d'intelligence:</span>
+          <ul>
+
+            <li class="type" id="intelligence">
+              <span class="title">
+                Intelligence verbale-linguistique
+              </span>
+              <p class="detaille">
+                C'est la capacité d'utiliser les mots efficacement, oralement ou par écrit.
+                On la reconnaît chez une personne qui aime lire, raconter ou entendre des histoires, parle facilement, pratique les jeux de mots.
+                <img src="Types img/linguistic.jpg" />
+              </p>
+            </li>
+
+            <li class="type" id="math">
+              <span class="title">
+                L'intelligence logico-mathématique
+              </span>
+              <p class="detaille">
+                C’est la capacité à calculer, quantifier, résoudre des problèmes mathématiques, émettre des hypothèses, être à l’aise avec l'abstrait, les symboles et les signes mathématiques.
+                C'est posséder une pensée déductive <span class="parenthese">un fait en entraîne un autre</span> et aimer les problèmes impliquant la logique.
+              <img src="Types img/maths.jpg" />
+            </p>
+            </li>
+
+            <li class="type" id="sport">
+              <span class="title">
+                L'intelligence corporelle-kinesthésique
+              </span>
+              <p class="detaille">
+          C'est la capacité à utiliser son corps pour communiquer, à manipuler des objets délicats et à réussir des mouvements très précis
+          <br />
+          On reconnaît cette forme d'intelligence chez une personne qui utilise son corps pour vivre ses émotions, communique bien par gestes, est compétent en coordination, dextérité, flexibilité
+              <img src="Types img/sport.jpg" />
+            </p>
+            </li>
+
+            <li class="type" id="spacial">
+              <span class="title">
+                L'intelligence spatiale
+              </span>
+              <p class="detaille">
+                C'est la capacité de penser en trois dimensions, de faire de l’imagerie mentale, de raisonner de façon spatiale, de manipuler des images graphiques et de voir des actions en images visuelles de façon mentale.
+  On la reconnaît chez des personnes qui perçoivent l'espace visuo-spatial, sont sensibles aux formes et aux couleurs...
+              <img src="Types img/spatiale.jpg" />
+            </p>
+            </li>
+
+            <li class="type" id="music">
+              <span class="title">
+                L'intelligence musicale
+              </span>
+              <p class="detaille">
+                C'est la capacité de distinguer des rythmes, des timbres sonores, de percevoir des sons, de rendre des émotions en musique, écrire des partitions…
+On la reconnaît chez des personnes qui jouent un instrument, écrivent des chansons.
+              <img src="Types img/music.jpg" />
+            </p>
+            </li>
+
+            <li class="type" id="autres">
+              <span class="title">
+                L'intelligence des autres ou interpersonnelle
+              </span>
+              <p class="detaille">
+              C'est la capacité de bien communiquer avec les autres, de percevoir leurs humeurs, intentions, motivations et émotions, d’être sensible aux messages gestuels.
+            <img src="Types img/autres.jpg" />
+            </p>
+            </li>
+
+            <li class="type" id="soi">
+              <span class="title">
+                L'intelligence de la conscience de soi ou intrapersonnelle
+              </span>
+              <p class="detaille">
+              C'est la capacité de bien se connaître, de comprendre ses émotions, de mettre des mots sur sa démarche personnelle. On la reconnaît chez une personne qui a une bonne connaissance d'elle-même <span class="parenthese">forces et faiblesses</span> et agit en conséquence.
+              <img src="Types img/soi.jpg" />
+            </p>
+            </li>
+
+            <li class="type" id="nature">
+              <span class="title">
+                L'intelligence naturaliste
+              </span>
+              <p class="detaille">
+                C'est la capacité d'être attentif au monde vivant, aux espèces animales, végétales, d'observer les espèces, de comprendre les écosystèmes... Le chasseur, l'indigène qui sait vivre en symbiose avec la nature, mais aussi le naturaliste, le photographe animalier ont cette forme d'intelligence.
+              <img src="Types img/nature.jpg" />
+            </p>
+            </li>
+
+            <li class="type" id="existence">
+              <span class="title">
+                L’intelligence existentielle
+              </span>
+              <p class="detaille">
+                L’intelligence existentielle est l’intelligence des penseurs profonds et des philosophes. Elle pousse les gens à remettre en question l’existence elle-même.
+                L’intelligence existentielle, ou intelligence spirituelle se définit par l’aptitude à se questionner sur le sens et l’origine des choses.
+             <img src="Types img/existence.jpg" />
+           </p>
+          </li>
+
+          </ul>
+
+    </div>
+
+    <div class="qi">
+      <p class="quest">
+            Donc comment mesure-t-on l'intelligence?
+        </p>
+        <p class="reponse">
+        <span style="margin-left: 30px;"><strong>Le QI est la réponse
+        a cette question.</strong></span>
+        Le quotient intellectuel ou QI est une mesure <span class="parenthese">
+          valeur numérique</span> de la capacité intellectuelle que chacun
+          d´entre nous possède à un niveau plus ou moins élevé par rapport à la
+           moyenne d´un groupe. Les tests de QI ont aidé dans la naissance du
+           mouvement eugéniste.
+
+      </p>
+      <img src="qi_chart.png" />
+
+      <p class="qitypes">
+        Les tests de QI on évolué au cours du temps. Voici les plus importants
+      </p>
+
+      <ul>
+
+        <li class="type" id="wais">
+          <span class="title">
+            Le WAIS et le WAIS-R
+          </span>
+          <p class="detaille">
+            <span style="margin-left: 30px;">En 1939, David Wechsler, psychologue américain, publia une batterie de tests à l'intention des adultes afin de mesurer leur intelligence.
+            <br />
+            <span style="margin-left: 30px;">Il modifie le traitement statistique des tests afin d'avoir des résultats non plus en âge mental, ni en QI, mais en rang par rapport à une population, l'individu étant comparé non plus à des personnes d'âges différents mais à la population de son âge
+            <br />
+            <span style="margin-left: 30px;">Le WAIS est l'échelle d'intelligence pour adultes de Wechsler.
+            <br />
+            <span style="margin-left: 30px;">Il a été standardisé en 1954.
+            <br />
+            <span style="margin-left: 30px;">Quant au WAIS-R, il s'agit tout simplement de la version révisée de ce dernier; sa standardisation date elle de 1978.
+            <br />
+            <span style="margin-left: 30px;">Le test est divisé en 2 groupes de subtests, permettant d'obtenir une mesure de QI verbal <span style="parenthese">culturel</span> et de QI de performance <span style="parenthese">aculturel</span>.
+            <br />
+            <span style="margin-left: 30px;">Six épreuves verbales : information et compréhension générales, raisonnement arithmétique vocabulaire.
+            <br />
+            <span style="margin-left: 30px;">Cinq épreuves de performance mettant en jeu les qualités perceptives et les capacités d'analyse et de raisonnement du sujet : classement et complètement d'images.
+            <br />
+            <span style="margin-left: 30px;">Maintenant, il existe le WAIS III, appliqué depuis 2000.
+            <br />
+            <span style="margin-left: 30px;">Le WAIS-III inclut des indices plus spécifiques: Compréhension Verbale, Organisation Perceptive, Vitesse de Traitement et Mémoire de Travail.
+        </li>
+
+        <li class="type" id="wisc">
+          <span class="title">
+            Le WISC
+          </span>
+          <p class="detaille">
+            <span style="margin-left: 30px;">Le WISC est utilisé entre 6 ans et 16 ans et 9 mois.
+            <br />
+            <span style="margin-left: 30px;">Le WISC  <span class="parenthese">Weschler Intelligence Scale for Children</span> est l'échelle d'intelligence pour enfants de Wechsler.
+            <br />
+            <span style="margin-left: 30px;">Il comporte:
+            <br />
+            5 sous-tests verbaux : test d'information, de compréhension, d'arithmétique, de vocabulaire, de similitudes,
+            <br />
+            5 sous-tests de performance, dans lesquels l'enfant doit copier des dessins à l'aide de cubes à motifs, ordonner un ensemble d'images, ...
+            <br />
+            <span style="margin-left: 30px;">Par convention, la moyenne obtenue par chaque tranche d'âge de l'échantillon standardisé correspond à un score au QI de 100. De nouveau par convention, la déviation standard par rapport à cet échantillon équivaut à 15 points de QI de différence. Pour un bon échantillonnage et une distribution normale, cela signifie que les 2/3 environ de la population d'une classe d'âge ont un QI compris entre 85 et 115.
+            <br />
+            <span style="margin-left: 30px;">Le QI reflète alors une position relative d'un individu par rapport à sa classe d'âge, et non un résultat isolé.
+          </li>
+
+         <li class="type" id="binet">
+           <span class="title">
+            Le test de Stanford Binet
+           </span>
+           <p class="detaille">
+            <span style="margin-left: 30px;">Le premier véritable test de QI moderne a été mis au point par Alfred Binet <span class="parenthese">1857-1911</span> en 1905.
+            <br />
+            <span style="margin-left: 30px;">C'est la première <strong>Échelle Métrique de l'Intelligence</strong>, échelle de développement qui estime le degré de développement intellectuel de l'enfant
+            <br />
+            <span style="margin-left: 30px;">Le test Binet <span class="parenthese">ou test Binet Simon</span> avait déjà quasiment toutes les caractéristiques des tests actuels. Ses questions ont été posées à un très grand nombre d'enfants. À chaque question correspond un "âge intellectuel", qui est l'âge auquel la moitié des enfants au moins est capable de répondre à la question.
+            <br />
+            <span style="margin-left: 30px;">Enfin, selon les questions sur lesquelles l'enfant bloque, il est possible d'évaluer sa maturité intellectuelle.
+            <br />
+            <span style="margin-left: 30px;"><strong>Le Stanford Binet</strong>
+            <br />
+            <span style="margin-left: 30px;">En 1916, Lewis Terman<span class="parenthese"> un psychologue de l'université américaine de Stanford </span> établi un nouveau test d'intelligence inspiré des travaux de Binet et Stern, le Stanford-Binet. Terman introduisit alors la notion de "quotient intellectuel" qui donna naissance au test de QI tel qu'on le connait aujourd'hui. Il propose une échelle de calcul couvrant les différentes facettes de l'intelligence.
+          </li>
+
+          <li class="type" id="abc">
+            <span class="title">
+              Le K.ABC
+            </span>
+            <p class="detaille">
+              <span style="margin-left: 30px;">Le K.ABC <span class="parenthese">Kaufman Assessment Battery for Children</span> s'adresse aux enfants âgés de 2 ans 1/2 à 12 ans 1/2.
+              <br />
+              <span style="margin-left: 30px;">Ce test a pour but de mesurer l’intelligence et les connaissances, son originalité est qu'il mettrait plus l’accent sur le processus que sur le contenu.
+              <br />
+              <span style="margin-left: 30px;">Le K.ABC s’appuie comme le mentionne Dr. Alan Kaufman, le moins possible sur le langage, les informations et les compétences acquises. Ces échelles font appel à la notion d’intelligence fluide définie par Cattell et Horn <span class="parenthese">1966</span> c’est-à-dire comme un fonctionnement souple et adaptable face à des problèmes liés à des situations nouvelles.
+              <br />
+              <span style="margin-left: 30px;">Un avantage du K.ABC est de tester des enfants présentant des handicaps auditifs, des troubles de la parole ou du langage ou non francophones, les tâches qui le composent pouvant être indiquées par gestes et les réponses se situer uniquement dans le registre moteur.
+            </li>
+
+           <li class="type" id="raven">
+             <span class="title">
+               Les Matrices de Raven
+             </span>
+             <p class="detaille">
+               <span style="margin-left: 30px;">John C. Raven s'intéressa à la notion que l'intelligence implique la capacité de gérer des termes abstraits: <span class="parenthese">à développer un système de raisonnement logique à partir d'éléments abstraits</span>. Ce test a été développé juste avant la 2ème guerre mondiale et a connu un nombre considérable de versions.
+               <br />
+               <span style="margin-left: 30px;">Comment le test marche:
+               <br />
+               Ces recherches aboutirent à la construction d'un ensemble de matrices 3x3 remplies de figures abstraites. La troisième case de la troisième ligne étant vide, la tâche du sujet est de sélectionner dans un ensemble la figure qui correspond à la suite de la troisième ligne en raisonnant à partir des deux premières.
+               <br />
+               <span style="margin-left: 30px;">Les Matrices de Raven sont donc des tests à choix multiples et peuvent être administrées sur un grand nombre d’individus en même temps. L'avantage de ces épreuves est qu'elles peuvent être utilisées avec des sujets sourds ou des sujets dont la langue maternelle est différente de celle de l'expérimentateur
+             </li>
+
+      </ul>
+      <p class="qilink">
+        Nous avons réalise un test de QI pour plusieurs personnes dans notre classe. Vous pouvez vous testez à <a href="http://www.mon-qi.com/tests-de-qi.php"><u>mon-qi.com</u></a>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script>
+$(document).ready(function() {
+$('.detaille').hide();
+
+
+$('#intelligence').click(function() {
+  $('#intelligence > .detaille').toggle('400');
+});
+
+$('#math').click(function() {
+  $('#math > .detaille').toggle('400');
+});
+
+$('#sport').click(function() {
+  $('#sport > .detaille').toggle('400');
+});
+
+$('#spacial').click(function() {
+    $('#spacial > .detaille').toggle('400');
+});
+
+$('#music').click(function() {
+  $('#music > .detaille').toggle('400');
+});
+
+$('#autres').click(function() {
+  $('#autres > .detaille').toggle('400');
+});
+
+$('#soi').click(function() {
+  $('#soi > .detaille').toggle('400');
+});
+
+$('#nature').click(function() {
+  $('#nature > .detaille').toggle('400');
+});
+
+$('#existence').click(function() {
+  $('#existence > .detaille').toggle('400');
+});
+
+$('#wais').click(function() {
+  $('#wais > .detaille').toggle('400');
+});
+
+$('#wisc').click(function() {
+  $('#wisc > .detaille').toggle('400');
+});
+
+$('#binet').click(function() {
+  $('#binet > .detaille').toggle('400');
+});
+
+$('#abc').click(function() {
+  $('#abc > .detaille').toggle('400');
+});
+
+$('#raven').click(function() {
+  $('#raven > .detaille').toggle('400');
+});
+
+});
+
+    </script>
+</body>
+</html>
