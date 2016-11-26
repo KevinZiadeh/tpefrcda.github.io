@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html>
 <head>
   <title>Peut-on Tout Mesurer</title>
@@ -15,36 +15,91 @@
     $(document).ready(function(){
       setInterval(function(){
     if($(window).width() <= 600 && $(window).width() > 370){
+      $(".names").addClass('namesact').removeClass('names');
+      $(".name").addClass('nameact').removeClass('name');
       $(".header").addClass('headeract').removeClass('header');
       $(".heading").addClass('headingact').removeClass('heading');
+      $(".emotions").addClass('emotionsact').removeClass('emotions');
+      $(".systemes").addClass('systemesact').removeClass('systemes');
     }else if ($(window).width() <= 370){
+      $(".names").addClass('namesact2').removeClass('names');
+      $(".name").addClass('nameact2').removeClass('name');
       $(".header").addClass('headeract2').removeClass('header');
       $(".heading").addClass('headingact2').removeClass('heading');
+      $(".emotions").addClass('emotionsact2').removeClass('emotions');
+        $(".systemes").addClass('systemesact2').removeClass('systemes');
     }
     else {
+      $(".names").addClass('names').removeClass('namesact');
+      $(".name").addClass('name').removeClass('nameact');
       $(".header").addClass('header').removeClass('headeract');
       $(".heading").addClass('heading').removeClass('headingact');
+      $(".systemes").addClass('systemes').removeClass('systemesact');
     }
     }, 100);
+
+
+    $('.emotions').hide();
+    $('.systemes').hide();
+
+
+    $('#emo').click(function() {
+      $('.emotions').fadeToggle('300');
+      $('.emotionsact').fadeToggle('300');
+      $('.emotionsact2').fadeToggle('300');
+    });
+
+    $('#sys').click(function() {
+      $('.systemes').fadeToggle('300');
+      $('.systemesact').fadeToggle('300');
+      $('.systemesact2').fadeToggle('300');
+    });
+
     });
 
     </script>
-
 </head>
+
 <body>
   <body>
     <div class="header">
       <ul class="heading">
-        <a href="../index.html"><li>
+        <a href="../index.html"><li style="background-color: rgb(200, 0, 0); color: rgb(230, 230, 230);">
           Accueil
         </li></a>
-        <a href="../Emotions/emotions.html"> <li>
+
+        <li id="emo">
           Les Emotions
-        </li></a>
-        <a href="../Systemes/systemes.html"><li>
+
+                <ul class="emotions">
+                  <a href='../Emotions/douleur.html'><li>
+                    La Douleur
+                  </li></a>
+                  <a href='../Emotions/amour.html'><li>
+                    L'Amour
+                  </li></a>
+                  <a href='../Emotions/peur.html'><li>
+                    La Peur
+                  </li></a>
+                </ul>
+
+        </li>
+
+        <li id="sys">
           Les Systemes
-        </li></a>
-        <a href="../Intelligence/intelligence.html"><li  style="background-color: rgb(200, 0, 0); color: rgb(230, 230, 230);">
+
+                <ul class="systemes">
+                  <a href='../Systemes/nerveux.html'><li>
+                    Le Systeme Nerveux
+                  </li></a>
+                  <a href='../Systemes/hormonale.html'><li>
+                    Le Systeme Hormonale
+                  </li></a>
+
+                </ul>
+
+        </li>
+        <a href="../Intelligence/intelligence.html"><li>
           L'Intelligence
         </li></a>
         <a href="../img/img.html"><li>
@@ -53,6 +108,9 @@
       </ul>
     </div>
 
+
+
+    
     <div class="intel">
       <p class="intelintro">
         La connaissance c'est avoir la bonne réponse.
