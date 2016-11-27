@@ -1,4 +1,12 @@
+.parenthese{
+  color: rgb(150, 150, 150);
+}
+
+
+
+
 /* style for index */
+
 .us{
   position: relative;
   }
@@ -81,14 +89,14 @@ position: relative;
 .introduction{
   position: relative;
   margin-left: 30px;
-  font-size: 24px;
+  font-size: 20px;
   display: block;
 }
 
 .sondage{
   position: relative;
   margin-left: 30px;
-  font-size: 24px;
+  font-size: 20px;
   margin-top: 70px;
 }
 
@@ -149,10 +157,6 @@ position: relative;
   position: relative;
 }
 
-.parenthese{
-  color: rgb(150, 150, 150);
-}
-
 .intelintro{
   margin-left: 30%;
   font-size: 32px;
@@ -162,7 +166,7 @@ position: relative;
 }
 
 .reponse{
-  font-size: 22px;
+  font-size: 18px;
   margin-left: 20px;
   margin-bottom: 50px;
 }
@@ -171,7 +175,7 @@ position: relative;
   font-weight: 800;
   text-decoration: underline;
   margin-left: 100px;
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: -10px
 }
 
@@ -189,7 +193,7 @@ position: relative;
   display: block;
   list-style-type: none;
   position: relative;
-  margin: 70px 0 0 10%;
+  margin: 70px 0 0 5%;
   max-width: 80%;
 }
 
@@ -198,7 +202,7 @@ position: relative;
   color: rgb(200, 0, 0);
   border-radius: 4px;
   border: 2px solid rgb(200, 0, 0);
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
 }
 
@@ -209,7 +213,7 @@ position: relative;
 }
 
 .detaille{
-  font-size: 22px;
+  font-size: 18px;
   text-align: center;
 }
 
@@ -220,6 +224,7 @@ position: relative;
   display: block;
   margin-left: 30%;
 }
+
 .qi{
   position: relative;
   margin-top: 120px;
@@ -235,16 +240,117 @@ position: relative;
 .qitypes{
   font-weight: 800;
   margin-left: 100px;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .qilink{
   margin-top: 100px;
-  font-size: 26px;
+  font-size: 22px;
   margin-left: 10%;
 }
 
 .qilink a:hover{
   color: rgb(200,0,0);
   transition: 150ms;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* style for amour */
+.amourcit{
+  margin-left: 30%;
+  font-size: 32px;
+  color: rgb(200, 0, 0);
+  margin-bottom: 70px;
+  font-weight: 900;
+}
+
+.amourintro{
+  position: relative;
+}
+
+.amourintro p{
+  font-size: 20px;
+  margin-left: 20px;
+  margin-bottom: 50px;
+}
+
+.amourhor{
+  position: relative;
+  margin-top: 50px;
+}
+
+.amourtit{
+  font-weight: 800;
+  text-decoration: underline;
+  margin-left: 100px;
+  font-size: 20px;
+  margin-bottom: -10px
+}
+
+.hormones{
+  font-size: 18px;
+  margin-left: 20px;
+  margin-bottom: 50px;
+}
+
+.hormones ul{
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.amourtype{
+  display: block;
+  list-style-type: none;
+  position: relative;
+  margin: 10px 0 30px 5%;
+  max-width: 80%;
+}
+
+.amourtype .amourtitle{
+  padding: 3px;
+  color: rgb(200, 0, 0);
+  border-radius: 4px;
+  border: 1px solid rgb(200, 0, 0);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.amourtype .amourtitle:hover{
+  color: rgb(230, 230, 230);
+  transition: 150ms;
+  background-color: rgb(200,0,0);
+}
+
+.amourdetaille{
+  font-size: 14px;
+  text-align: center;
+}
+
+.amourtype img{
+  width: 40%;
+  position: relative;
+  margin-top: 30px;
+  display: block;
+  margin-left: 30%;
+}
+
+.conclusion{
+  font-size: 20px;
+  margin-left: 20px;
+  margin-bottom: 50px;
+
 }
