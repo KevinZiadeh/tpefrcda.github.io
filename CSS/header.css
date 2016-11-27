@@ -145,7 +145,7 @@ a{
   display: inline;
   float: left;
   list-style-type: none;
-  padding: 11px 5px 8px 5px;
+  padding: 8px 5px 8px 5px;
 }
 
 .headingact li:hover{
@@ -258,7 +258,7 @@ a{
   display: inline;
   float: left;
   list-style-type: none;
-  padding: 11px 4px 11px 4px;
+  padding: 7px 4px 7px 4px;
 }
 
 .headingact2 li:hover{
