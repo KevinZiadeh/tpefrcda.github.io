@@ -127,7 +127,7 @@ a{
   top: 0px;
   left: 0px;
   background-color: rgb(230, 230, 230);
-  border-bottom: 8px solid rgb(200, 0, 0);
+  border-bottom: 6px solid rgb(200, 0, 0);
   display: block;
   margin: 0px;
   overflow: visible;
@@ -136,7 +136,7 @@ a{
 .headingact{
   font-size: 10px;
   color: rgb(200, 0, 0);
-  display: inline;;
+  display: inline;
 }
 
 .headingact li{
@@ -239,7 +239,7 @@ a{
   top: 0px;
   left: 0px;
   background-color: rgb(230, 230, 230);
-  border-bottom: 8px solid rgb(200, 0, 0);
+  border-bottom: 5px solid rgb(200, 0, 0);
   display: block;
   margin: 0px;
   overflow: visible;
