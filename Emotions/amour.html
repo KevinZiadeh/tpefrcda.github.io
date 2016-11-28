@@ -60,7 +60,6 @@
     </script>
 </head>
 
-<body>
   <body>
     <div class="header">
       <ul class="heading">
@@ -108,7 +107,15 @@
       </ul>
     </div>
 
-    <p class="amourcit">
+
+
+
+
+
+
+
+
+    <p class="citation">
     Misérable est l'amour qui se laisserait mesurer.
     </p>
 
@@ -144,15 +151,29 @@
         comparables au "high" du toxicomane grâce à des neurones qui produisent des endorphines
         et de la dopamine qui émettent des signaux de bonheur, de plaisir et de bien-être.
       <br />
-        <span style="margin-left: 30px;"><strong>L’endorphine</strong></span>
-         la plus importante se nomme la phénylétilamine <span class="parenthese">ou PEA</span>,
-         est fabriquée quand nous sommes attirées physiquement par une personne.
-         Elle agit comme les amphétamines - en réduisant l'appétit et les besoins
-         de sommeil. Elle provoque la bonne humeur, l'optimisme, l'hyperactivité.
-         Ces effets sont semblables à ceux de la drogue.
-      <br />
-        <span style="margin-left: 30px;">Quand</span> on tombe amoureux il y a aussi une baisse
-          de la <strong>sérotonine</strong>. Cette hormone, de formule brute
+
+      <ul>
+
+      <li class="amourtype" id="end">
+        <span class="amourtitle">
+          L’Endorphine
+       </span>
+        <p class="amourdetaille">
+          la plus importante se nomme la phénylétilamine <span class="parenthese">ou PEA</span>,
+          est fabriquée quand nous sommes attirées physiquement par une personne.
+          Elle agit comme les amphétamines - en réduisant l'appétit et les besoins
+          de sommeil. Elle provoque la bonne humeur, l'optimisme, l'hyperactivité.
+          Ces effets sont semblables à ceux de la drogue.
+          <img src="" />
+        </p>
+      </li>
+
+      <li class="amourtype" id="ser">
+        <span class="amourtitle">
+          La Sérotonine
+       </span>
+        <p class="amourdetaille">
+          Cette hormone, de formule brute
           <span style="color: rgb(200,0,0)">C10H12N2O</span> et de masse molaire
           <span style="color: rgb(200,0,0)">176g.mol−1</span> nous permet d'avoir
           un esprit critique, donc, quand elle n’est pas active,
@@ -160,19 +181,30 @@
           plusieurs jours ou plusieurs mois. C’est pour cela que quand deux personnes
           se rencontrent et pensent s’aimer à la folie, car il y a très peu de
           sérotonine, au bout de quelques mois, se demandent pourquoi elles sont en couple.
-      <br />
-        <span style="margin-left: 30px;"><strong>La vasopressine</strong></span> est
+          <img src="" />
+        </p>
+      </li>
+
+      <li class="amourtype" id="vas">
+        <span class="amourtitle">
+          La Vasopressine
+       </span>
+        <p class="amourdetaille">
+          est
           un polypeptide comportant neuf acides aminés de formule brute <span style="color: rgb(200,0,0)">
           C46H65N15O12S2</span> et de masse molaire<span style="color: rgb(200,0,0)"> 1 084g.mol−1.</span>
           C'est une hormone qui augmente la pression artérielle <span class="parenthese">provoquant
           l‘érection chez l’homme</span>, l'attraction pour le partenaire, le comportement sexuel,
           les sentiments, l'attachement, l'apprentissage et la mémoire.
-      <br />
-        <span style="margin-left: 30px;">Si,</span> dans la suite le jeune couple fait l’amour,
-        alors cela renforce le cocktail chimique car, lors de l'orgasme,
-        d’autres hormones sont libérées et euphorisent le cerveau
+              <br />
+            <img src="" />
+        </p>
+      </li>
 
-    <ul>
+      <span style="font-size: 19px; font-weight: 400;">Si, dans la suite le jeune couple fait l’amour, alors cela renforce le cocktail
+      chimique car, lors de l'orgasme, d’autres hormones sont libérées et euphorisent le cerveau :
+    </span>
+
 
     <li class="amourtype" id="dop">
       <span class="amourtitle">
@@ -291,6 +323,18 @@
 
     $(document).ready(function() {
       $('.amourdetaille').hide();
+
+      $('#end').click(function() {
+        $('#end > .amourdetaille').toggle('400');
+      });
+
+      $('#ser').click(function() {
+        $('#ser > .amourdetaille').toggle('400');
+      });
+
+      $('#vas').click(function() {
+          $('#vas > .amourdetaille').toggle('400');
+      });
 
       $('#dop').click(function() {
         $('#dop > .amourdetaille').toggle('400');

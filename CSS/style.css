@@ -2,6 +2,28 @@
   color: rgb(150, 150, 150);
 }
 
+.reponse{
+  font-size: 18px;
+  margin-left: 20px;
+  margin-bottom: 50px;
+}
+
+.quest{
+  font-weight: 800;
+  text-decoration: underline;
+  margin-left: 100px;
+  font-size: 20px;
+  margin-bottom: -10px
+}
+
+.citation{
+  margin-left: 45%;
+  font-size: 32px;
+  color: rgb(200, 0, 0);
+  margin-bottom: 70px;
+  font-weight: 900;
+}
+
 
 
 
@@ -157,28 +179,6 @@ position: relative;
   position: relative;
 }
 
-.intelintro{
-  margin-left: 30%;
-  font-size: 32px;
-  color: rgb(200, 0, 0);
-  margin-bottom: 70px;
-  font-weight: 900;
-}
-
-.reponse{
-  font-size: 18px;
-  margin-left: 20px;
-  margin-bottom: 50px;
-}
-
-.quest{
-  font-weight: 800;
-  text-decoration: underline;
-  margin-left: 100px;
-  font-size: 20px;
-  margin-bottom: -10px
-}
-
 .inteltypes{
     position: relative;
     margin-top: 50px;
@@ -269,14 +269,6 @@ position: relative;
 
 
 /* style for amour */
-.amourcit{
-  margin-left: 30%;
-  font-size: 32px;
-  color: rgb(200, 0, 0);
-  margin-bottom: 70px;
-  font-weight: 900;
-}
-
 .amourintro{
   position: relative;
 }
@@ -316,16 +308,16 @@ position: relative;
   display: block;
   list-style-type: none;
   position: relative;
-  margin: 10px 0 30px 5%;
+  margin: 30px 0 40px 5%;
   max-width: 80%;
 }
 
 .amourtype .amourtitle{
-  padding: 3px;
+  padding: 5px;
   color: rgb(200, 0, 0);
   border-radius: 4px;
-  border: 1px solid rgb(200, 0, 0);
-  font-size: 16px;
+  border: 2px solid rgb(200, 0, 0);
+  font-size: 20px;
   font-weight: 500;
 }
 
@@ -336,16 +328,16 @@ position: relative;
 }
 
 .amourdetaille{
-  font-size: 15px;
+  font-size: 18px;
   text-align: center;
 }
 
 .amourtype img{
-  width: 40%;
+  width: 30%;
   position: relative;
   margin-top: 30px;
   display: block;
-  margin-left: 30%;
+  margin-left: 20%;
 }
 
 .conclusion{
@@ -353,4 +345,47 @@ position: relative;
   margin-left: 20px;
   margin-bottom: 50px;
 
+}
+
+
+
+
+
+
+
+/* style for peur*/
+.adrenaline{
+  display: block;
+  list-style-type: none;
+  position: relative;
+  margin: 30px 0 40px 5%;
+  max-width: 80%;
+}
+
+.adrenaline .peurtitle{
+  padding: 7px;
+  color: rgb(200, 0, 0);
+  border-radius: 4px;
+  border: 2px solid rgb(200, 0, 0);
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.adrenaline .peurtitle:hover{
+  color: rgb(230, 230, 230);
+  transition: 150ms;
+  background-color: rgb(200,0,0);
+}
+
+.peurdetaille{
+  font-size: 18px;
+  text-align: center;
+}
+
+.adrenaline img{
+  width: 30%;
+  position: relative;
+  margin-top: 30px;
+  display: block;
+  margin-left: 20%;
 }
