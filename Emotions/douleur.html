@@ -107,5 +107,184 @@
         </li></a>
       </ul>
     </div>
+
+
+
+
+    <p class="citation">
+      La douleur change les gens, mais elle les rend également plus forts.
+    </p>
+
+    <div class="douleurintro">
+
+      <p class="quest">
+        C'est quoi la Douleur?
+      </p>
+      <p class="reponse">
+        <span style="margin-left: 30px;"><strong>La douleur</strong></span> est une
+         sensation désagréable qui agit comme un signal d'alarme. Elle nécessite
+         une réaction immédiate à un stimulus. Elle signale généralement une lésion,
+         une maladie ou un mal fonctionnement de l’organisme.
+         <br />
+         <span style="margin-left: 30px;">Il</span> existe chez l’Homme plusieurs
+         formes de douleur allant de la simple alerte <span class="parenthese">suite
+           à une lésion</span> à une souffrance chronique révélatrice d’une pathologie
+           <span class="parenthese">étude des maladies de leur causes et de leurs
+             symptômes</span>évolutive ou au contraire sans cause évidente.
+      </p>
+
+    </div>
+
+
+    <div class="douleurtypes">
+
+      <p class="quest">
+        Il existe plusieurs types de douleur
+      </p>
+
+      <ul>
+
+        <li class="douleurtype" id="aig">
+          <span class="douleurtitle">
+            Douleur Aigüe
+         </span>
+          <p class="douleurdetaille">
+            c'est un signal d'alarme qui permet de rechercher la cause, elle a un
+            rôle protecteur. Elle est récente, <span style="color: rgb(200,0,0)">momentanée </span>
+            et finit pas disparaître rapidement. Elle est cependant souvent intense.
+         </p>
+        </li>
+
+        <li class="douleurtype" id="chr">
+          <span class="douleurtitle">
+            Douleur Chronique
+          </span>
+          <p class="douleurdetaille">
+            dès que la douleur qui dure <span class="parenthese">au-delà d'environ 3 mois</span>,
+            elle est dite chronique. Elle peut entraîner une perte de l'appétit et
+            avoir des conséquences sur le sommeil et la vie quotidienne.
+          </p>
+        </li>
+
+        <li class="douleurtype" id="noc">
+          <span class="douleurtitle">
+            Douleur par Excès de Nociception
+         </span>
+          <p class="douleurdetaille">
+            <span class="parenthese">nociceptive : récepteur spécifique situe sous la
+              peau qui ont pour rôle de transporter le message sensoriel vers le cerveau</span>
+              Ce type de douleur est due à une importante stimulation des récepteurs
+              périphériques <span class="parenthese">nerfs reliant le système nerveux
+              au différents muscles et organes du corps</span> ce qui entraîne une
+              douleur plus ou moins intense.
+              <br />
+              Elle peut être liée à des phénomènes mécaniques, inflammatoires, thermiques
+              ou encore chimiques. Cette douleur peut être continue ou irrégulière.
+              Le seul moyen d'arrêter cette douleur est de diminuer ou d'arrêter la
+              transmission des messages allant vers le cerveau.
+              </p>
+        </li>
+
+        <li class="douleurtype" id="neu">
+          <span class="douleurtitle">
+            Douleur Neurogène
+         </span>
+          <p class="douleurdetaille">
+            <span class="parenthese">neurologie : spécialité médicale consacrée a
+              l’étude et au traitement des maladies touchant le système nerveux
+              central [cerveau moelle épinière] ou périphérique [racine et nerfs]</span>
+             cette douleur est due à une coupure des voies nociceptives, ce qui entraîne
+             une perturbation du circuit de la douleur. Les différentes causes de ces
+             douleurs peuvent être des infections, des troubles métaboliques
+             <span class="parenthese">diabète, alcoolisme</span> ou une compression
+             nerveuse  <span class="parenthese">hernie discale, canal carpien</span>.
+             <br />
+             Les douleurs neurogènes sont également appelées douleurs neuropathiques
+             et le diagnostique nécessite de remplir le questionnaire DN 4 pour
+             confirmer l'examen clinique.
+          </p>
+        </li>
+
+        <li class="douleurtype" id="psy">
+          <span class="douleurtitle">
+            Douleur Psychogène
+         </span>
+          <p class="douleurdetaille">
+            <span class="parenthese">causée par des facteurs psychologiques</span>
+            la douleur psychogène est une douleur qui n'a aucune cause somatique
+            <span class="parenthese">il n'y a pas de blessure apparente</span>.
+            Il est donc difficile de l'évaluer.
+          </p>
+        </li>
+
+        <li class="douleurtype" id="mix">
+          <span class="douleurtitle">
+            Douleur Mixte
+         </span>
+          <p class="douleurdetaille">
+            on parle de douleur mixte lorsqu'une douleur nociceptive et une douleur
+            neuropathique <span class="parenthese">douleur chronique intense provoquée
+            par des nerfs lésés</span> se manifestent en même temps.
+          </p>
+        </li>
+
+      </ul>
+    </div>
+
+
+    <div class="douleurmesure">
+      <p class="quest">
+        Peut-on mesurer la douleur?
+      </p>
+      <p class="reponse">
+        <span style="margin-left: 30px;">Les</span> mesures de la douleur ne
+        sont pas 100% fiables car la douleur est subjective.
+        <br />
+        Mais on a des échelles de mesure comme celle d'Evendol et l'échelle des
+        visages.
+      </p>
+        <a href="douleur/evendol.jpg"><img src="douleur/evendol.jpg" alt="evendol"></a>
+        <a href="douleur/visages.jpg"><img src="douleur/visages.jpg" alt="visages"></a>
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+
+      $(document).ready(function() {
+        $('.douleurdetaille').hide();
+
+        $('#aig').click(function() {
+          $('#aig > .douleurdetaille').toggle('400');
+        });
+
+        $('#chr').click(function() {
+          $('#chr > .douleurdetaille').toggle('400');
+        });
+
+        $('#noc').click(function() {
+            $('#noc > .douleurdetaille').toggle('400');
+        });
+
+        $('#neu').click(function() {
+          $('#neu > .douleurdetaille').toggle('400');
+        });
+
+        $('#psy').click(function() {
+          $('#psy > .douleurdetaille').toggle('400');
+        });
+
+        $('#mix').click(function() {
+          $('#mix > .douleurdetaille').toggle('400');
+        });
+
+
+      });
+    </script>
   </body>
 </html>
