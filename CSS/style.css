@@ -298,10 +298,12 @@ position: relative;
   margin-bottom: 50px;
 }
 
-.hormones ul{
+.amourtypes{
   display: block;
   margin-top: 40px;
   margin-bottom: 40px;
+  padding-left: 0px;
+  margin-left: 2%
 }
 
 .amourtype{
@@ -332,12 +334,12 @@ position: relative;
   text-align: center;
 }
 
-.amourtype img{
+.amourdetaille img{
   width: 30%;
   position: relative;
-  margin-top: 30px;
-  display: block;
-  margin-left: 20%;
+  margin-top: 40px;
+  display: inline;
+  margin-left: 11%;
 }
 
 .conclusion{
@@ -383,11 +385,11 @@ position: relative;
 }
 
 .adrenaline img{
-  width: 30%;
+  width: 50%;
   position: relative;
   margin-top: 30px;
   display: block;
-  margin-left: 20%;
+  margin-left: 25%;
 }
 
 
