@@ -30,7 +30,10 @@
 /* style for index */
 
 .us{
-  position: relative;
+  position: static;
+  z-index: 10;
+  width: 100%;
+  display: block;
   }
 
 .us img{
@@ -43,64 +46,46 @@
 }
 
 
-.names{
-  display: block;
-  position: relative;
-  height: 60px;
+.us ul{
+margin: 0 0 0 15%;
+padding: 0px;
 }
 
-.namesact{
+.usact ul{
   margin-left: -10%;
-  display: block;
-  height: 60px;
-  position: relative;
   margin-bottom: -50px;
 }
 
-.namesact2{
-  margin-left: -20%;
-  display: block;
-  height: 60px;
-  position: relative;
-  margin-bottom: -55px;
-}
-
-.us ul{
-position: relative;
-
-}
-
-.name{
+.us li{
   font-size: 20px;
   margin-top: 30px;
-  margin-right: -15%;
-  margin-left:20%;
-  display: block;
-  float: left;
+  margin-left:5%;
+  display: inline-block;
   list-style-type: none;
   position: relative;
   }
 
-.nameact{
+.us li:last-child{
+  margin-right: 50px;
+}
+
+
+.usact ul{
+  margin: 0 0 0 18%;
+  padding: 0px;
+}
+
+.usact li{
   font-size: 8px;
   margin-top: 30px;
-  margin-right: -18%;
-  margin-left:20%;
-  display: block;
-  float: left;
+  margin-left:2%;
+  display: inline-block;
   list-style-type: none;
   position: relative;
 }
 
-.nameact2{
-  font-size: 7px;
-  margin-top: 30px;
-  margin-right: -18%;
-  margin-left:20%;
-  display: block;
-  float: left;
-  list-style-type: none;
-  position: relative;
+.usact li:last-child{
+  margin-right: 20px;
 }
 
 .intro{

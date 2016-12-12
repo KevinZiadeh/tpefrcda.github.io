@@ -10,58 +10,11 @@
     <link type="text/css" rel="stylesheet" href="../CSS/header.css" />
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>
 
-    $(document).ready(function(){
-      setInterval(function(){
-    if($(window).width() <= 650 && $(window).width() > 370){
-      $(".names").addClass('namesact').removeClass('names');
-      $(".name").addClass('nameact').removeClass('name');
-      $(".header").addClass('headeract').removeClass('header');
-      $(".heading").addClass('headingact').removeClass('heading');
-      $(".emotions").addClass('emotionsact').removeClass('emotions');
-      $(".systemes").addClass('systemesact').removeClass('systemes');
-    }else if ($(window).width() <= 370){
-      $(".names").addClass('namesact2').removeClass('names');
-      $(".name").addClass('nameact2').removeClass('name');
-      $(".header").addClass('headeract2').removeClass('header');
-      $(".heading").addClass('headingact2').removeClass('heading');
-      $(".emotions").addClass('emotionsact2').removeClass('emotions');
-        $(".systemes").addClass('systemesact2').removeClass('systemes');
-    }
-    else {
-      $(".names").addClass('names').removeClass('namesact');
-      $(".name").addClass('name').removeClass('nameact');
-      $(".header").addClass('header').removeClass('headeract');
-      $(".heading").addClass('heading').removeClass('headingact');
-      $(".systemes").addClass('systemes').removeClass('systemesact');
-    }
-    }, 100);
-
-
-    $('.emotions').hide();
-    $('.systemes').hide();
-
-
-    $('#emo').click(function() {
-      $('.emotions').fadeToggle('300');
-      $('.emotionsact').fadeToggle('300');
-      $('.emotionsact2').fadeToggle('300');
-    });
-
-    $('#sys').click(function() {
-      $('.systemes').fadeToggle('300');
-      $('.systemesact').fadeToggle('300');
-      $('.systemesact2').fadeToggle('300');
-    });
-
-    });
-
-    </script>
 </head>
 
 <body>
-  <body>
+<script type="text/javascript" src="../header.js"></script>
     <div class="header">
       <ul class="heading">
         <a href="../index.html"><li>
