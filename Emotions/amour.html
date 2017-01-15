@@ -6,71 +6,63 @@
   <meta name="language" content="French">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta author="Kevin Ziadeh" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link type="text/css" rel="stylesheet" href="../CSS/style.css" />
-    <link type="text/css" rel="stylesheet" href="../CSS/header.css" />
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    </head>
 
-  <body>
-    <script type="text/javascript" src="../header.js"></script>
-    <div class="header">
-      <ul class="heading">
-        <a href="../index.html"><li>
-          Accueil
-        </li></a>
+</head>
 
-        <li id="emo" style="background-color: rgb(200, 0, 0); color: rgb(230, 230, 230);">
-          Les Emotions
-
-                <ul class="emotions">
-                  <a href='../Emotions/douleur.html'><li>
-                    La Douleur
-                  </li></a>
-                  <a href='../Emotions/amour.html'><li style="background-color: rgb(200, 0, 0); color: rgb(230, 230, 230);">
-                    L'Amour
-                  </li></a>
-                  <a href='../Emotions/peur.html'><li>
-                    La Peur
-                  </li></a>
-                </ul>
-
+<body>
+<script>
+</script>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">TPE</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="../index.html">Accueil</a></li>
+          <li class="dropdown active">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Les Emotions
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="../Emotions/douleur.html">La douleur</a></li>
+            <li class="active"><a href="../Emotions/amour.html">L'amour</a></li>
+            <li><a href="../Emotions/peur.html">La peur</a></li>
+          </ul>
         </li>
+        <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Les Systemes
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="../Systemes/nerveux.html">Le systeme nerveux</a></li>
+          <li><a href="../Systemes/Hormonal.html">Le systeme hormonale</a></li>
+        </ul>
+      </li>
+          <li><a href="../Intelligence/intelligence.html">L'Intelligence</a></li>
+        </ul>
 
-        <li id="sys">
-          Les Systemes
-
-                <ul class="systemes">
-                  <a href='../Systemes/nerveux.html'><li>
-                    Le Systeme Nerveux
-                  </li></a>
-                  <a href='../Systemes/Hormonal.html'><li>
-                    Le Systeme Hormonal
-                  </li></a>
-
-                </ul>
-
-        </li>
-        <a href="../Intelligence/intelligence.html"><li>
-          L'Intelligence
-        </li></a>
-        <a href="../img/img.html"><li>
-          Images
-        </li></a>
-      </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="../img/img.html"><span class="glyphicon glyphicon-camera"></span> </a></li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
 
+  <div class="container-fluid">
+    <div class="jumbotron" id="cit">
+      Misérable est l'amour qui se laisserait mesurer.
+    </div>
+  </div>
 
-
-
-
-
-
-
-    <p class="citation">
-    Misérable est l'amour qui se laisserait mesurer.
-    </p>
 
    <div class="amourintro">
      <p>
@@ -92,11 +84,11 @@
      </p>
   </div>
 
-  <div class="amourhor">
-    <p class="amourtit">
+  <div>
+    <p class="quest">
       Les principales hormones et leurs effets:
     </p>
-    <p class="hormones">
+    <p class="reponse">
       <span style="margin-left: 30px;">Dans</span> notre cerveau, nous possédons le système limbique qui est un groupe de
         structure du cerveau et joue un rôle très important dans le comportement et les
         émotions comme la peur, l’agressivité, le plaisir et la formation de la mémoire.
@@ -105,20 +97,20 @@
         et de la dopamine qui émettent des signaux de bonheur, de plaisir et de bien-être.
       <br />
 
-      <ul class="amourtypes">
+      <ul>
 
-      <li class="amourtype" id="end">
-        <span class="amourtitle">
+      <li class="type" id="end">
+        <span class="title">
           L’Endorphine
        </span>
-        <p class="amourdetaille">
+        <p class="detaille">
           la plus importante se nomme la phénylétilamine <span class="parenthese">ou PEA</span>,
           est fabriquée quand nous sommes attirées physiquement par une personne.
           Elle agit comme les amphétamines - en réduisant l'appétit et les besoins
           de sommeil. Elle provoque la bonne humeur, l'optimisme, l'hyperactivité.
           Ces effets sont semblables à ceux de la drogue.
 
-           <div style="display: block;" class="amourdetaille">
+           <div style="display: block;" class="detaille">
              <a href="molecules/end.png"><img src="molecules/end.png" style=" width: 50%;
                position: relative;
                margin-top: 30px;
@@ -128,11 +120,11 @@
         </p>
       </li>
 
-      <li class="amourtype" id="ser">
-        <span class="amourtitle">
+      <li class="type" id="ser">
+        <span class="title">
           La Sérotonine
        </span>
-        <p class="amourdetaille">
+        <p class="detaille">
           Cette hormone, de formule brute
           <span style="color: rgb(200,0,0)">C10H12N2O</span> et de masse molaire
           <span style="color: rgb(200,0,0)">176g.mol−1</span> nous permet d'avoir
@@ -141,7 +133,7 @@
           plusieurs jours ou plusieurs mois. C’est pour cela que quand deux personnes
           se rencontrent et pensent s’aimer à la folie, car il y a très peu de
           sérotonine, au bout de quelques mois, se demandent pourquoi elles sont en couple.
-          <div style="display: block;" class="amourdetaille">
+          <div style="display: block;" class="detaille">
             <a href="molecules/topo/ser.jpg"><img src="molecules/topo/ser.jpg" style=" width: 50%;
               position: relative;
               margin-top: 30px;
@@ -151,11 +143,11 @@
         </p>
       </li>
 
-      <li class="amourtype" id="vas">
-        <span class="amourtitle">
+      <li class="type" id="vas">
+        <span class="title">
           La Vasopressine
        </span>
-        <p class="amourdetaille">
+        <p class="detaille">
           est
           un polypeptide comportant neuf acides aminés de formule brute <span style="color: rgb(200,0,0)">
           C46H65N15O12S2</span> et de masse molaire<span style="color: rgb(200,0,0)"> 1 084g.mol−1.</span>
@@ -163,7 +155,7 @@
           l‘érection chez l’homme</span>, l'attraction pour le partenaire, le comportement sexuel,
           les sentiments, l'attachement, l'apprentissage et la mémoire.
               <br />
-              <div style="display: block;" class="amourdetaille">
+              <div style="display: block;" class="detaille">
                 <a href="molecules/vas.png"><img src="molecules/vas.png" style=" width: 50%;
                   position: relative;
                   margin-top: 30px;
@@ -179,11 +171,11 @@
 
 
 
-    <li class="amourtype" id="ocy">
-      <span class="amourtitle">
+    <li class="type" id="ocy">
+      <span class="title">
         L’Ocytocine
      </span>
-      <p class="amourdetaille">
+      <p class="detaille">
          L'ocytocine est l’hormone de la tendresse. C’est un polypeptide comportant neufs
          acides aminés de formule brute<span style="color: rgb(200,0,0)"> C43H66N12O12S2 </span>
          et de masse molaire<span style="color: rgb(200,0,0)"> 1 007g.mol−1</span>.
@@ -194,23 +186,23 @@
          Elle est aussi produite quand on embrasse une personne qui nous attire mais
          aussi lors d'un accouchement pour diminuer la douleur.
 
-         <div style="display: block" class="amourdetaille">
+         <div style="display: block" class="detaille">
            <a href="molecules/topo/ocy.jpg"><img src="molecules/topo/ocy.jpg" /></a>
            <a href="molecules/3d/ocy.png"><img src="molecules/3d/ocy.png" /></a>
          </div>
       </p>
     </li>
 
-    <li class="amourtype" id="luli">
-      <span class="amourtitle">
+    <li class="type" id="luli">
+      <span class="title">
         La Luliberine
      </span>
-      <p class="amourdetaille">
+      <p class="detaille">
         Lulibérine est une neurohormone de formule brute<span style="color: rgb(200,0,0)">
         C55H75N17O13</span> et de masse molaire<span style="color: rgb(200,0,0)"> 1 182g.mol−1</span>.
         <br />
          Elle participe au désir.
-         <div style="display: block;" class="amourdetaille">
+         <div style="display: block;" class="detaille">
            <a href="molecules/3d/luli.png"><img src="molecules/3d/luli.png" style=" width: 50%;
              position: relative;
              margin-top: 30px;
@@ -220,11 +212,11 @@
       </p>
     </li>
 
-      <li class="amourtype" id="testo">
-        <span class="amourtitle">
+      <li class="type" id="testo">
+        <span class="title">
           La Testostérone
        </span>
-        <p class="amourdetaille">
+        <p class="detaille">
           La testostérone, de formule brute<span style="color: rgb(200,0,0)"> C19H28O2</span>
           et de masse molaire<span style="color: rgb(200,0,0)"> 288g.mol−1</span> est
           l’hormone sexuelle mâle mais lors d’un rapport sexuel il y a production de
@@ -232,7 +224,7 @@
           la circulation sanguine dans les organes sexuelles.
          <br />
           L’organisme prend goût à ces hormones donc nous devenons accros au sexe.
-          <div style="display: block;" class="amourdetaille">
+          <div style="display: block;" class="detaille">
             <a href="molecules/3d/testo.png"><img src="molecules/3d/testo.png" style=" width: 50%;
               position: relative;
               margin-top: 30px;
@@ -246,11 +238,11 @@
 <hr style="background-color: rgb(200,0,0); width: 80%;  height: 1px; border: 1px solid rgb(200,0,0); border-radius: 2px;" />
 
 
-      <li class="amourtype" id="dop">
-        <span class="amourtitle">
+      <li class="type" id="dop">
+        <span class="title">
           La Dopamine
         </span>
-        <p class="amourdetaille">
+        <p class="detaille">
           La dopamine est <span style="color: rgb(200,0,0)">un neurotransmetteur</span>
            de formule brute <span style="color: rgb(200,0,0)">C8H11NO2</span>
           et de masse molaire<span style="color: rgb(200,0,0)"> 153g.moll−1</span>
@@ -259,7 +251,7 @@
           <br />
           La libération de dopamine provoque une sensation d’énergie et de puissance
           chez le partenaire sexuelle.
-          <div style="display: block" class="amourdetaille">
+          <div style="display: block" class="detaille">
             <a href="molecules/topo/dop.jpg"><img src="molecules/topo/dop.jpg" /></a>
             <a href="molecules/3d/dop.png"><img src="molecules/3d/dop.png" /></a>
           </div>
@@ -320,34 +312,34 @@
   <script>
 
     $(document).ready(function() {
-      $('.amourdetaille').hide();
+      $('.detaille').hide();
 
       $('#end').click(function() {
-        $('#end > .amourdetaille').toggle('400');
+        $('#end > .detaille').toggle('400');
       });
 
       $('#ser').click(function() {
-        $('#ser > .amourdetaille').toggle('400');
+        $('#ser > .detaille').toggle('400');
       });
 
       $('#vas').click(function() {
-          $('#vas > .amourdetaille').toggle('400');
+          $('#vas > .detaille').toggle('400');
       });
 
       $('#dop').click(function() {
-        $('#dop > .amourdetaille').toggle('400');
+        $('#dop > .detaille').toggle('400');
       });
 
       $('#ocy').click(function() {
-        $('#ocy > .amourdetaille').toggle('400');
+        $('#ocy > .detaille').toggle('400');
       });
 
       $('#luli').click(function() {
-        $('#luli > .amourdetaille').toggle('400');
+        $('#luli > .detaille').toggle('400');
       });
 
       $('#testo').click(function() {
-          $('#testo > .amourdetaille').toggle('400');
+          $('#testo > .detaille').toggle('400');
       });
 
 
