@@ -6,71 +6,68 @@
   <meta name="language" content="French">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta author="Kevin Ziadeh" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link type="text/css" rel="stylesheet" href="../CSS/style.css" />
-    <link type="text/css" rel="stylesheet" href="../CSS/header.css" />
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
 </head>
 
 <body>
-<script type="text/javascript" src="../header.js"></script>
-    <div class="header">
-      <ul class="heading">
-        <a href="../index.html"><li>
-          Accueil
-        </li></a>
-
-        <li id="emo">
-          Les Emotions
-
-                <ul class="emotions">
-                  <a href='../Emotions/douleur.html'><li>
-                    La Douleur
-                  </li></a>
-                  <a href='../Emotions/amour.html'><li>
-                    L'Amour
-                  </li></a>
-                  <a href='../Emotions/peur.html'><li>
-                    La Peur
-                  </li></a>
-                </ul>
-
+<script>
+</script>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">TPE</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="../index.html">Accueil</a></li>
+          <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Les Emotions
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="../Emotions/douleur.html">La douleur</a></li>
+            <li><a href="../Emotions/amour.html">L'amour</a></li>
+            <li><a href="../Emotions/peur.html">La peur</a></li>
+          </ul>
         </li>
+        <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Les Systemes
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="../Systemes/nerveux.html">Le systeme nerveux</a></li>
+          <li><a href="../Systemes/Hormonal.html">Le systeme hormonale</a></li>
+        </ul>
+      </li>
+          <li class="active"><a href="../Intelligence/intelligence.html">L'Intelligence</a></li>
+        </ul>
 
-        <li id="sys">
-          Les Systemes
-
-                <ul class="systemes">
-                  <a href='../Systemes/nerveux.html'><li>
-                    Le Systeme Nerveux
-                  </li></a>
-                  <a href='../Systemes/Hormonal.html'><li>
-                    Le Systeme Hormonal
-                  </li></a>
-
-                </ul>
-
-        </li>
-        <a href="../Intelligence/intelligence.html"><li style="background-color: rgb(200, 0, 0); color: rgb(230, 230, 230);">
-          L'Intelligence
-        </li></a>
-        <a href="../img/img.html"><li>
-          Images
-        </li></a>
-      </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="../img/img.html"><span class="glyphicon glyphicon-camera"></span> </a></li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
 
 
 
-    <div class="intel">
-      <p class="citation">
+  <div class="container-fluid">
+    <div class="jumbotron" id="cit">
         La connaissance c'est avoir la bonne réponse.
       <br />
       L'intelligence c'est avoir la bonne question.
-    </p>
+    </div>
+  </div>
 
+  <div class="intelligence">
       <p class="quest">
             C'est quoi l'intelligence?
         </p>
@@ -79,11 +76,9 @@
          présente l’ensemble des capacités mentales d’un individu,
          les facultés de comprendre, de connaitre les faits ce qui permet à
          l’Homme de s’adapter avec son environnement et c’est ce qu’il lui
-         distingue des autres espèces.
+         distingue des autre espèces.
       </p>
 
-
-      <div class="inteltypes">
         <p class="quest">
             La mesure de l'intelligence est-elle absolue?
         </p>
@@ -96,6 +91,8 @@
          <br />
         <span style="text-decoration: underline; margin-left: 30px;">On a
           des differents types d'intelligence:</span>
+
+
           <ul>
 
             <li class="type" id="intelligence">
@@ -105,7 +102,7 @@
               <p class="detaille">
                 C'est la capacité d'utiliser les mots efficacement, oralement ou par écrit.
                 On la reconnaît chez une personne qui aime lire, raconter ou entendre des histoires, parle facilement, pratique les jeux de mots.
-                <img src="Types img/linguistic.jpg" />
+                <img class="img-responsive img-rounded" src="Types img/linguistic.jpg" />
               </p>
             </li>
 
@@ -116,7 +113,7 @@
               <p class="detaille">
                 C’est la capacité à calculer, quantifier, résoudre des problèmes mathématiques, émettre des hypothèses, être à l’aise avec l'abstrait, les symboles et les signes mathématiques.
                 C'est posséder une pensée déductive <span class="parenthese">un fait en entraîne un autre</span> et aimer les problèmes impliquant la logique.
-              <img src="Types img/maths.jpg" />
+              <img class="img-responsive img-rounded" src="Types img/maths.jpg" />
             </p>
             </li>
 
@@ -128,7 +125,7 @@
           C'est la capacité à utiliser son corps pour communiquer, à manipuler des objets délicats et à réussir des mouvements très précis
           <br />
           On reconnaît cette forme d'intelligence chez une personne qui utilise son corps pour vivre ses émotions, communique bien par gestes, est compétent en coordination, dextérité, flexibilité
-              <img src="Types img/sport.jpg" />
+              <img class="img-responsive img-rounded" src="Types img/sport.jpg" />
             </p>
             </li>
 
@@ -138,8 +135,8 @@
               </span>
               <p class="detaille">
                 C'est la capacité de penser en trois dimensions, de faire de l’imagerie mentale, de raisonner de façon spatiale, de manipuler des images graphiques et de voir des actions en images visuelles de façon mentale.
-  On la reconnaît chez des personnes qui perçoivent l'espace visuo-spatial, sont sensibles aux formes et aux couleurs...
-              <img src="Types img/spatiale.jpg" />
+                On la reconnaît chez des personnes qui perçoivent l'espace visuo-spatial, sont sensibles aux formes et aux couleurs...
+              <img class="img-responsive img-rounded" src="Types img/spatiale.jpg" />
             </p>
             </li>
 
@@ -149,8 +146,8 @@
               </span>
               <p class="detaille">
                 C'est la capacité de distinguer des rythmes, des timbres sonores, de percevoir des sons, de rendre des émotions en musique, écrire des partitions…
-On la reconnaît chez des personnes qui jouent un instrument, écrivent des chansons.
-              <img src="Types img/music.jpg" />
+                On la reconnaît chez des personnes qui jouent un instrument, écrivent des chansons.
+              <img class="img-responsive img-rounded" src="Types img/music.jpg" />
             </p>
             </li>
 
@@ -160,7 +157,7 @@ On la reconnaît chez des personnes qui jouent un instrument, écrivent des chan
               </span>
               <p class="detaille">
               C'est la capacité de bien communiquer avec les autres, de percevoir leurs humeurs, intentions, motivations et émotions, d’être sensible aux messages gestuels.
-            <img src="Types img/autres.jpg" />
+            <img class="img-responsive img-rounded" src="Types img/autres.jpg" />
             </p>
             </li>
 
@@ -170,7 +167,7 @@ On la reconnaît chez des personnes qui jouent un instrument, écrivent des chan
               </span>
               <p class="detaille">
               C'est la capacité de bien se connaître, de comprendre ses émotions, de mettre des mots sur sa démarche personnelle. On la reconnaît chez une personne qui a une bonne connaissance d'elle-même <span class="parenthese">forces et faiblesses</span> et agit en conséquence.
-              <img src="Types img/soi.jpg" />
+              <img class="img-responsive img-rounded" src="Types img/soi.jpg" />
             </p>
             </li>
 
@@ -180,7 +177,7 @@ On la reconnaît chez des personnes qui jouent un instrument, écrivent des chan
               </span>
               <p class="detaille">
                 C'est la capacité d'être attentif au monde vivant, aux espèces animales, végétales, d'observer les espèces, de comprendre les écosystèmes... Le chasseur, l'indigène qui sait vivre en symbiose avec la nature, mais aussi le naturaliste, le photographe animalier ont cette forme d'intelligence.
-              <img src="Types img/nature.jpg" />
+              <img class="img-responsive img-rounded" src="Types img/nature.jpg" />
             </p>
             </li>
 
@@ -191,7 +188,7 @@ On la reconnaît chez des personnes qui jouent un instrument, écrivent des chan
               <p class="detaille">
                 L’intelligence existentielle est l’intelligence des penseurs profonds et des philosophes. Elle pousse les gens à remettre en question l’existence elle-même.
                 L’intelligence existentielle, ou intelligence spirituelle se définit par l’aptitude à se questionner sur le sens et l’origine des choses.
-             <img src="Types img/existence.jpg" />
+             <img class="img-responsive img-rounded" src="Types img/existence.jpg" />
            </p>
           </li>
 
@@ -213,9 +210,9 @@ On la reconnaît chez des personnes qui jouent un instrument, écrivent des chan
            mouvement eugéniste.
 
       </p>
-      <img src="qi_chart.png" />
+      <img class="img-responsive img-rounded" src="qi_chart.png" />
 
-      <p class="qitypes">
+      <p>
         Les tests de QI on évolué au cours du temps. Voici les plus importants
       </p>
 
@@ -329,66 +326,49 @@ On la reconnaît chez des personnes qui jouent un instrument, écrivent des chan
     <script>
 $(document).ready(function() {
 $('.detaille').hide();
-
-
 $('#intelligence').click(function() {
   $('#intelligence > .detaille').toggle('400');
 });
-
 $('#math').click(function() {
   $('#math > .detaille').toggle('400');
 });
-
 $('#sport').click(function() {
   $('#sport > .detaille').toggle('400');
 });
-
 $('#spacial').click(function() {
     $('#spacial > .detaille').toggle('400');
 });
-
 $('#music').click(function() {
   $('#music > .detaille').toggle('400');
 });
-
 $('#autres').click(function() {
   $('#autres > .detaille').toggle('400');
 });
-
 $('#soi').click(function() {
   $('#soi > .detaille').toggle('400');
 });
-
 $('#nature').click(function() {
   $('#nature > .detaille').toggle('400');
 });
-
 $('#existence').click(function() {
   $('#existence > .detaille').toggle('400');
 });
-
 $('#wais').click(function() {
   $('#wais > .detaille').toggle('400');
 });
-
 $('#wisc').click(function() {
   $('#wisc > .detaille').toggle('400');
 });
-
 $('#binet').click(function() {
   $('#binet > .detaille').toggle('400');
 });
-
 $('#abc').click(function() {
   $('#abc > .detaille').toggle('400');
 });
-
 $('#raven').click(function() {
   $('#raven > .detaille').toggle('400');
 });
-
 });
-
     </script>
 </body>
 </html>
