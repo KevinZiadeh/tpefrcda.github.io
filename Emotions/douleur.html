@@ -6,70 +6,65 @@
   <meta name="language" content="French">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta author="Kevin Ziadeh" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link type="text/css" rel="stylesheet" href="../CSS/style.css" />
-    <link type="text/css" rel="stylesheet" href="../CSS/header.css" />
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
 </head>
 
 <body>
-  <script type="text/javascript" src="../header.js"></script>
-    <div class="header">
-      <ul class="heading">
-        <a href="../index.html"><li>
-          Accueil
-        </li></a>
-
-        <li id="emo" style="background-color: rgb(200, 0, 0); color: rgb(230, 230, 230);">
-          Les Emotions
-
-                <ul class="emotions">
-                  <a href='../Emotions/douleur.html'><li style="background-color: rgb(200, 0, 0); color: rgb(230, 230, 230);">
-                    La Douleur
-                  </li></a>
-                  <a href='../Emotions/amour.html'><li>
-                    L'Amour
-                  </li></a>
-                  <a href='../Emotions/peur.html'><li>
-                    La Peur
-                  </li></a>
-                </ul>
-
+<script>
+</script>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">TPE</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="../index.html">Accueil</a></li>
+          <li class="dropdown active">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Les Emotions
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li class="active"><a href="../Emotions/douleur.html">La douleur</a></li>
+            <li><a href="../Emotions/amour.html">L'amour</a></li>
+            <li><a href="../Emotions/peur.html">La peur</a></li>
+          </ul>
         </li>
+        <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Les Systemes
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="../Systemes/nerveux.html">Le systeme nerveux</a></li>
+          <li><a href="../Systemes/Hormonal.html">Le systeme hormonale</a></li>
+        </ul>
+      </li>
+          <li><a href="../Intelligence/intelligence.html">L'Intelligence</a></li>
+        </ul>
 
-        <li id="sys">
-          Les Systemes
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="../img/img.html"><span class="glyphicon glyphicon-camera"></span> </a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-                <ul class="systemes">
-                  <a href='../Systemes/nerveux.html'><li>
-                    Le Systeme Nerveux
-                  </li></a>
-                  <a href='../Systemes/Hormonal.html'><li>
-                    Le Systeme Hormonal
-                  </li></a>
 
-                </ul>
-
-        </li>
-        <a href="../Intelligence/intelligence.html"><li>
-          L'Intelligence
-        </li></a>
-        <a href="../img/img.html"><li>
-          Images
-        </li></a>
-      </ul>
+  <div class="container-fluid">
+    <div class="jumbotron" id="cit">
+      La douleur change les gens, mais elle les rend également plus forts.
+      </p>
     </div>
 
 
-
-
-    <p class="citation">
-      La douleur change les gens, mais elle les rend également plus forts.
-    </p>
-
     <div class="douleurintro">
-
       <p class="quest">
         C'est quoi la Douleur?
       </p>
@@ -89,7 +84,7 @@
     </div>
 
 
-    <div class="douleurtypes">
+    <div>
 
       <p class="quest">
         Il existe plusieurs types de douleur
@@ -97,33 +92,33 @@
 
       <ul>
 
-        <li class="douleurtype" id="aig">
-          <span class="douleurtitle">
+        <li class="type" id="aig">
+          <span class="title">
             Douleur Aigüe
          </span>
-          <p class="douleurdetaille">
+          <p class="detaille">
             c'est un signal d'alarme qui permet de rechercher la cause, elle a un
             rôle protecteur. Elle est récente, <span style="color: rgb(200,0,0)">momentanée </span>
             et finit pas disparaître rapidement. Elle est cependant souvent intense.
          </p>
         </li>
 
-        <li class="douleurtype" id="chr">
-          <span class="douleurtitle">
+        <li class="type" id="chr">
+          <span class="title">
             Douleur Chronique
           </span>
-          <p class="douleurdetaille">
+          <p class="detaille">
             dès que la douleur qui dure <span class="parenthese">au-delà d'environ 3 mois</span>,
             elle est dite chronique. Elle peut entraîner une perte de l'appétit et
             avoir des conséquences sur le sommeil et la vie quotidienne.
           </p>
         </li>
 
-        <li class="douleurtype" id="noc">
-          <span class="douleurtitle">
+        <li class="type" id="noc">
+          <span class="title">
             Douleur par Excès de Nociception
          </span>
-          <p class="douleurdetaille">
+          <p class="detaille">
             <span class="parenthese">nociceptive : récepteur spécifique situe sous la
               peau qui ont pour rôle de transporter le message sensoriel vers le cerveau</span>
               Ce type de douleur est due à une importante stimulation des récepteurs
@@ -138,11 +133,11 @@
               </p>
         </li>
 
-        <li class="douleurtype" id="neu">
-          <span class="douleurtitle">
+        <li class="type" id="neu">
+          <span class="title">
             Douleur Neurogène
          </span>
-          <p class="douleurdetaille">
+          <p class="detaille">
             <span class="parenthese">neurologie : spécialité médicale consacrée a
               l’étude et au traitement des maladies touchant le système nerveux
               central [cerveau moelle épinière] ou périphérique [racine et nerfs]</span>
@@ -158,11 +153,11 @@
           </p>
         </li>
 
-        <li class="douleurtype" id="psy">
-          <span class="douleurtitle">
+        <li class="type" id="psy">
+          <span class="title">
             Douleur Psychogène
          </span>
-          <p class="douleurdetaille">
+          <p class="detaille">
             <span class="parenthese">causée par des facteurs psychologiques</span>
             la douleur psychogène est une douleur qui n'a aucune cause somatique
             <span class="parenthese">il n'y a pas de blessure apparente</span>.
@@ -170,11 +165,11 @@
           </p>
         </li>
 
-        <li class="douleurtype" id="mix">
-          <span class="douleurtitle">
+        <li class="type" id="mix">
+          <span class="title">
             Douleur Mixte
          </span>
-          <p class="douleurdetaille">
+          <p class="detaille">
             on parle de douleur mixte lorsqu'une douleur nociceptive et une douleur
             neuropathique <span class="parenthese">douleur chronique intense provoquée
             par des nerfs lésés</span> se manifestent en même temps.
@@ -190,35 +185,14 @@
         Peut-on mesurer la douleur?
       </p>
       <p class="reponse">
-        <span style="margin-left: 30px;">On</span> a deux types de mesure de la douleur:
-        <span style="color: rgb(200,0,0)">Auto-évaluation</span> et <span style="color: rgb(200,0,0)">
-        Hétéro-évaluation</span>
-        <p class="quest" style="font-size: 19px; text-decoration: none;">
-          <br />Auto-évaluation
-        </p>
-        <p class="reponse">
-          <br />Echelle des Visages
-          <br />
-<a href="douleur/visages.jpg"><img src="douleur/visages.jpg" alt="visages"></a>
-          <br />Echelle Visuelle Analogique
-          <br />
-<a href="douleur/eva1.jpeg"><img src="douleur/eva1.jpeg" alt="eva1"></a>
-<a href="douleur/eva2.jpeg"><img src="douleur/eva2.jpeg" alt="eva2"></a>
-        </p>
-        <p class="quest" style="font-size: 19px; text-decoration: none;">
-          <br />Hétéro-évaluation
-        </p>
-        <p class="reponse">
-          <br />Evendol
-          <br />
-<a href="douleur/evendol.jpg"><img src="douleur/evendol.jpg" alt="evendol"></a>
-        </p>
-      </p>
-
-      <p class="quest" style="text-decoration: none; color: rgb(200,0,0); margin-bottom: 50px;">
-        <span style="margin-left: 30px;">Mais</span> les mesures de la douleur ne
+        <span style="margin-left: 30px;">Les</span> mesures de la douleur ne
         sont pas 100% fiables car la douleur est subjective.
+        <br />
+        Mais on a des échelles de mesure comme celle d'Evendol et l'échelle des
+        visages.
       </p>
+        <a href="douleur/evendol.jpg"><img src="douleur/evendol.jpg" alt="evendol"></a>
+        <a href="douleur/visages.jpg"><img src="douleur/visages.jpg" alt="visages"></a>
     </div>
 
 
@@ -231,30 +205,30 @@
     <script>
 
       $(document).ready(function() {
-        $('.douleurdetaille').hide();
+        $('.detaille').hide();
 
         $('#aig').click(function() {
-          $('#aig > .douleurdetaille').toggle('400');
+          $('#aig > .detaille').toggle('400');
         });
 
         $('#chr').click(function() {
-          $('#chr > .douleurdetaille').toggle('400');
+          $('#chr > .detaille').toggle('400');
         });
 
         $('#noc').click(function() {
-            $('#noc > .douleurdetaille').toggle('400');
+            $('#noc > .detaille').toggle('400');
         });
 
         $('#neu').click(function() {
-          $('#neu > .douleurdetaille').toggle('400');
+          $('#neu > .detaille').toggle('400');
         });
 
         $('#psy').click(function() {
-          $('#psy > .douleurdetaille').toggle('400');
+          $('#psy > .detaille').toggle('400');
         });
 
         $('#mix').click(function() {
-          $('#mix > .douleurdetaille').toggle('400');
+          $('#mix > .detaille').toggle('400');
         });
 
 
