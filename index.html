@@ -6,89 +6,71 @@
   <meta name="language" content="French">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta author="Kevin Ziadeh" />
-    <link type="text/css" rel="stylesheet" href="CSS/style.css" />
-    <link type="text/css" rel="stylesheet" href="CSS/header.css" />
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="CSS/style.css" />
 
 </head>
 
 <body>
-  <script type="text/javascript" src="header.js">
 
-  </script>
-    <div class="header">
-      <ul>
-        <a href="index.html"><li style="background-color: rgb(200, 0, 0); color: rgb(230, 230, 230);">
-          Accueil
-        </li></a>
-
-        <li id="emo">
-          Les Emotions
-
-                <ul class="emotions">
-                  <a href='Emotions/douleur.html'><li>
-                    La Douleur
-                  </li></a>
-                  <a href='Emotions/amour.html'><li>
-                    L'Amour
-                  </li></a>
-                  <a href='Emotions/peur.html'><li>
-                    La Peur
-                  </li></a>
-                </ul>
-
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">TPE</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Accueil</a></li>
+          <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Les Emotions
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="Emotions/douleur.html">La douleur</a></li>
+            <li><a href="Emotions/amour.html">L'amour</a></li>
+            <li><a href="Emotions/peur.html">La peur</a></li>
+          </ul>
         </li>
-
-        <li id="sys">
-          Les Systemes
-
-                <ul class="systemes">
-                  <a href='Systemes/nerveux.html'><li>
-                    Le Systeme Nerveux
-                  </li></a>
-                  <a href='Systemes/Hormonal.html'><li>
-                    Le Systeme Hormonal
-                  </li></a>
-
-                </ul>
-
-        </li>
-        <a href="Intelligence/intelligence.html"><li>
-          L'Intelligence
-        </li></a>
-        <a href="img/img.html"><li>
-          Images
-        </li></a>
-      </ul>
-    </div>
-
-
-
-
-
-
-
-
-    <div class="us">
-      <img src="us.jpg" alt="us" />
-        <ul>
-          <li class="name">
-            Rita-Maria <strong>BOUTROS</strong>
-          </li>
-          <li class="name">
-            Lea <strong>KHAYRALLAH</strong>
-          </li>
-          <li class="name">
-            Rita <strong>MIR</strong>
-          </li>
-          <li class="name">
-            Kevin <strong>ZIADEH</strong>
-          </li>
+        <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Les Systemes
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="Systemes/nerveux.html">Le systeme nerveux</a></li>
+          <li><a href="Systemes/Hormonal.html">Le systeme hormonale</a></li>
         </ul>
+      </li>
+          <li><a href="Intelligence/intelligence.html">L'Intelligence</a></li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="img/img.html"><span class="glyphicon glyphicon-camera"></span> </a></li>
+        </ul>
+      </div>
     </div>
+  </nav>
+
+  <div class="container">
+    <div class="jumbotron">
+      <img src="us.jpg" class="img-rounded img-responsive" alt="us" />
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-3 col-xs-6">Rita-Maria <strong>BOUTROS</strong></div>
+          <div class="col-sm-3 col-xs-6">Lea <strong>KHAYRALLAH</strong></div>
+          <div class="col-sm-3 col-xs-6">Rita <strong>MIR</strong></div>
+          <div class="col-sm-3 col-xs-6">Kevin <strong>ZIADEH</strong></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
     <div class="intro">
-      <p  class="introduction">
+      <p>
         <span style="margin-left: 30px;"><strong>L’Homme</strong></span> désormais contrôle le monde au sens propre comme au sens figuré, il l’explore le parcours et le traverse, il l’évalue le mètre et le calcul.
 La mesure est un point d’ancre de l’Homme. Il est typiquement humain de chercher à mesurer l’immesurable.
 La mesure a déjà pris contrôle de notre monde concret. <span style="color: rgb(200,0,0)">Mais a-t-elle pris de même le contrôle de tout notre monde Humain abstrait ?</span>
@@ -96,13 +78,14 @@ La curiosité de l’Homme le mène vers un chemin inachevé et pour cela nous r
 
       </p>
     </div>
+
     <div class="sondage">
       <p>
   <span style="margin-left: 30px;">On</span> a réalisé un sondage dans lequel on a demandé à des étrangers de repondre à notre problématique (mesurer l'amour, la douleur, l'intelligence).
   Vous pouvez y participer en envoyant votre avis a <span style="color: rgb(200,0,0); text-decoration: underline">tpefrcda@gmail.com</span>.<br />
   Les résultats qu'on a obtenu peuvent être traduit dans le graphe suivant:
       </p>
-<img src="" / alt="sondage">
+<img src="sondage.png" class="img-responsive img-rounded" alt="sondage">
     </div>
 </body>
 </html>
